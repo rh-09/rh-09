@@ -2,4 +2,4 @@
 Electrical and Electronic Engineering at 
 Khulna University of Engineering and Technology. 
 I'm currently learning to code. I have started 
-my journey With C.
+my journey with C. 
