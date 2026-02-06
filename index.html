@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Night Ops: Modern FPS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="boot">
+      <div class="boot-card">
+        <h1>Night Ops</h1>
+        <p>
+          A modern FPS experience in the browser. Lock your pointer and survive the
+          training simulation.
+        </p>
+        <ul>
+          <li><strong>WASD</strong> move • <strong>Shift</strong> sprint • <strong>C</strong> crouch • <strong>Space</strong> jump</li>
+          <li><strong>Mouse</strong> aim • <strong>Left click</strong> fire • <strong>R</strong> reload</li>
+          <li><strong>V</strong> toggle visor • <strong>F</strong> focus ability</li>
+        </ul>
+        <button id="start">Deploy</button>
+      </div>
+    </div>
+
+    <div id="hud">
+      <div class="hud-top">
+        <div class="logo">NIGHT OPS</div>
+        <div class="mission">Operation: Specter Grid</div>
+      </div>
+      <div class="hud-left">
+        <div class="stat">
+          <span>Health</span>
+          <div class="bar"><div id="health-bar"></div></div>
+        </div>
+        <div class="stat">
+          <span>Stamina</span>
+          <div class="bar"><div id="stamina-bar"></div></div>
+        </div>
+        <div class="stat">
+          <span>Focus</span>
+          <div class="bar"><div id="focus-bar"></div></div>
+        </div>
+      </div>
+      <div class="hud-right">
+        <div class="ammo">
+          <div id="ammo-count">30</div>
+          <div class="ammo-label">/ 90</div>
+        </div>
+        <div class="score">
+          <span>Score</span>
+          <strong id="score">00000</strong>
+        </div>
+      </div>
+      <div class="hud-bottom">
+        <div class="status">
+          <span id="status">Training online</span>
+          <span id="time">00:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="crosshair">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div id="hit-marker">+</div>
+
+    <canvas id="minimap" width="180" height="180"></canvas>
+
+    <div id="visor-overlay"></div>
+
+    <script type="module" src="game.js"></script>
+  </body>
+</html>
